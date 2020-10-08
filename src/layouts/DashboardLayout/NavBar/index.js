@@ -13,21 +13,18 @@ import {
   makeStyles
 } from '@material-ui/core';
 import {
-  AlertCircle as AlertCircleIcon,
   BarChart as BarChartIcon,
-  Lock as LockIcon,
   Settings as SettingsIcon,
   ShoppingBag as ShoppingBagIcon,
   User as UserIcon,
-  UserPlus as UserPlusIcon,
   Users as UsersIcon
 } from 'react-feather';
 import NavItem from './NavItem';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith'
+  avatar: '../../images/useravator.svg',
+  jobTitle: 'Part-time Developer',
+  name: 'Evans Tjabadi'
 };
 
 const items = [
@@ -37,39 +34,25 @@ const items = [
     title: 'Dashboard'
   },
   {
-    href: '/app/customers',
-    icon: UsersIcon,
-    title: 'Customers'
-  },
-  {
-    href: '/app/products',
-    icon: ShoppingBagIcon,
-    title: 'Products'
-  },
-  {
-    href: '/app/account',
+    href: '/app/profile',
     icon: UserIcon,
-    title: 'Account'
+    title: 'Profile'
   },
   {
-    href: '/app/settings',
+    href: '/app/services',
+    icon: UsersIcon, //to be changed
+    title: 'Services'
+  },
+  {
+    href: '/app/FAQs',
+    icon: ShoppingBagIcon,
+    title: 'FAQs'
+  },
+
+  {
+    href: '/app/contact-support',
     icon: SettingsIcon,
-    title: 'Settings'
-  },
-  {
-    href: '/login',
-    icon: LockIcon,
-    title: 'Login'
-  },
-  {
-    href: '/register',
-    icon: UserPlusIcon,
-    title: 'Register'
-  },
-  {
-    href: '/404',
-    icon: AlertCircleIcon,
-    title: 'Error'
+    title: 'Contact Support'
   }
 ];
 
@@ -116,7 +99,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
           className={classes.avatar}
           component={RouterLink}
           src={user.avatar}
-          to="/app/account"
+          to="/app/profile"
         />
         <Typography
           className={classes.name}
@@ -146,7 +129,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         </List>
       </Box>
       <Box flexGrow={1} />
-      <Box
+      {/* <Box
         p={2}
         m={2}
         bgcolor="background.dark"
@@ -178,7 +161,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
             See PRO version
           </Button>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 

@@ -16,11 +16,11 @@ const routes = [
     path: 'app',
     element: <DashboardLayout />,
     children: [
-      { path: 'account', element: <AccountView /> },
-      { path: 'customers', element: <CustomerListView /> },
+      { path: 'profile', element: <AccountView /> },
+      { path: 'services', element: <CustomerListView /> },
       { path: 'dashboard', element: <DashboardView /> },
-      { path: 'products', element: <ProductListView /> },
-      { path: 'settings', element: <SettingsView /> },
+      { path: 'FAQs', element: <ProductListView /> },
+      { path: 'contact-support', element: <SettingsView /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   },
