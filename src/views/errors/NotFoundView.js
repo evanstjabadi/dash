@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography, makeStyles } from '@material-ui/core'
 import Page from '../../components/Page'
+// import image from '../../images/un'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,7 +41,7 @@ const NotFoundView = () => {
             <img
               alt="Under development"
               className={classes.image}
-              src="/static/images/undraw_page_not_found_su7k.svg" // make unique
+              src="../../images/undraw_page_not_found_su7k.svg" // make unique
             />
           </Box>
         </Container>
