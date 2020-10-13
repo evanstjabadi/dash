@@ -18,7 +18,7 @@ const FAQs = () => {
   const classes = useStyles()
 
   return (
-    <Page className={classes.root} title="Products">
+    <Page className={classes.root} title="FAQs">
       <Container maxWidth={false}>List of FAQS</Container>
     </Page>
   )

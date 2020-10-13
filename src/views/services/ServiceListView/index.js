@@ -15,7 +15,7 @@ const ServiceListView = () => {
   const classes = useStyles()
 
   return (
-    <Page className={classes.root} title="Customers">
+    <Page className={classes.root} title="Services">
       <Container maxWidth={false}>
         Something about our services here neh?
       </Container>

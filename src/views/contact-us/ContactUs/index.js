@@ -15,7 +15,7 @@ const ContactUs = () => {
   const classes = useStyles()
 
   return (
-    <Page className={classes.root} title="Settings">
+    <Page className={classes.root} title="Contact Us">
       <Container maxWidth="lg">Contact details</Container>
     </Page>
   )
