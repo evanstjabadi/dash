@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const ProductList = () => {
+const FAQs = () => {
   const classes = useStyles()
 
   return (
@@ -24,4 +24,4 @@ const ProductList = () => {
   )
 }
 
-export default ProductList
+export default FAQs

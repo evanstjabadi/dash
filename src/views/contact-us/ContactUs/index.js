@@ -11,16 +11,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const CustomerListView = () => {
+const ContactUs = () => {
   const classes = useStyles()
 
   return (
-    <Page className={classes.root} title="Customers">
-      <Container maxWidth={false}>
-        Something about our services here neh?
-      </Container>
+    <Page className={classes.root} title="Settings">
+      <Container maxWidth="lg">Contact details</Container>
     </Page>
   )
 }
 
-export default CustomerListView
+export default ContactUs

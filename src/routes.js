@@ -3,13 +3,13 @@ import { Navigate } from 'react-router-dom'
 import DashboardLayout from './layouts/DashboardLayout'
 import MainLayout from './layouts/MainLayout'
 import AccountView from './views/account/AccountView'
-import CustomerListView from './views/customer/CustomerListView'
-import DashboardView from './views/reports/DashboardView'
+import ServiceListView from './views/services/ServiceListView'
+import DashboardView from './views/dash/DashboardView'
 import LoginView from './views/auth/LoginView'
 import NotFoundView from './views/errors/NotFoundView'
-import ProductListView from './views/product/ProductListView'
+import FAQs from './views/faqs/FAQs'
 import RegisterView from './views/auth/RegisterView'
-import SettingsView from './views/settings/SettingsView'
+import ContactUs from './views/contact-us/ContactUs'
 
 const routes = [
   {
@@ -17,10 +17,10 @@ const routes = [
     element: <DashboardLayout />,
     children: [
       { path: 'profile', element: <AccountView /> },
-      { path: 'services', element: <CustomerListView /> },
+      { path: 'services', element: <ServiceListView /> },
       { path: 'dashboard', element: <DashboardView /> },
-      { path: 'FAQs', element: <ProductListView /> },
-      { path: 'contact-support', element: <SettingsView /> },
+      { path: 'FAQs', element: <FAQs /> },
+      { path: 'contact-support', element: <ContactUs /> },
       { path: '*', element: <Navigate to="/404" /> },
     ],
   },
