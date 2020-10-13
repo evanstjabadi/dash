@@ -33,7 +33,7 @@ const TopBar = ({ className, onMobileNavOpen, ...rest }) => {
         </RouterLink>
         <Box flexGrow={1} />
         <Hidden mdDown>
-          Evans Tjabadi (ET)
+          <span>Evans Tjabadi (ET)</span>
           <IconButton color="inherit">
             <InputIcon />
           </IconButton>
